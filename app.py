@@ -1,11 +1,10 @@
 import streamlit as st
 import joblib
 import numpy as np
-from sklearn.preprocessing import StandardScaler
 
 # Load saved model and scaler
-model = joblib.load(r'C:/Users/RAJA VINAY KUMAR/Downloads/job preparation/fraud_model.pkl')
-scaler = joblib.load(r'C:/Users/RAJA VINAY KUMAR/Downloads/job preparation/fraud_scaler.pkl')
+model = joblib.load('fraud_model.pkl')
+scaler = joblib.load('fraud_scaler.pkl')
 
 st.title("🏦 UBS Fraud Detection System")
 st.write("Enter transaction details to check if it is fraudulent.")
